@@ -19,6 +19,9 @@ export default defineConfig({
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
           const ext = info[info.length - 1]
+          if (ext === 'css') {
+            return `assets/css/app[extname]`
+          }
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
             return `assets/images/[name]-[hash][extname]`
           }
@@ -42,7 +45,7 @@ export default defineConfig({
     // Source maps for production (optional, can be disabled for smaller builds)
     sourcemap: false,
     // CSS code splitting
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     // Asset inlining threshold (4kb)
     assetsInlineLimit: 4096
   },

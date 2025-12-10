@@ -31,7 +31,7 @@
               Explore Products
             </router-link>
             <router-link to="/about" class="btn-secondary text-lg px-8 py-4">
-              Learn More
+              Learn about our traditional filtered groundnut oil process
             </router-link>
           </div>
           

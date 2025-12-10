@@ -1,9 +1,25 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import viteImagemin from 'vite-plugin-imagemin'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    viteImagemin({
+      gifsicle: { optimizationLevel: 3 },
+      optipng: { optimizationLevel: 5 },
+      mozjpeg: { quality: 68, progressive: true },
+      pngquant: { quality: [0.6, 0.8], speed: 3 },
+      svgo: {
+        plugins: [
+          { name: 'removeViewBox', active: false },
+          { name: 'removeDimensions', active: true }
+        ]
+      },
+      webp: { quality: 70 }
+    })
+  ],
   build: {
     // Code splitting and chunk optimization
     rollupOptions: {

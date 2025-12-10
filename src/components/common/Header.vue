@@ -12,6 +12,7 @@
             class="h-[79px] w-auto object-contain"
             loading="eager"
             fetchpriority="high"
+            decoding="async"
           />
         </router-link>
 

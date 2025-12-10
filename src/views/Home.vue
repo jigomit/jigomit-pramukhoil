@@ -198,13 +198,13 @@ const features = [
     title: 'Rich in Nutrients',
     description: 'Packed with vitamin E and healthy monounsaturated fats',
     icon: 'HeartIcon',
-    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=400&h=400&fit=crop&q=80'
+    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=360&h=360&q=60'
   },
   {
     title: 'Premium Quality',
     description: 'Rigorous quality checks ensure the best product',
     icon: 'StarIcon',
-    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&h=400&fit=crop&q=80'
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=360&h=360&q=60'
   }
 ]
 

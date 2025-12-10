@@ -56,6 +56,7 @@
                 class="w-full h-auto rounded-xl object-cover aspect-square"
                 loading="eager"
                 fetchpriority="high"
+                decoding="async"
                 @error="handleImageError"
               />
             </div>

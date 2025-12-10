@@ -1,0 +1,79 @@
+# robots.txt for Pramukh Groundnut Oil Mill
+# https://pramukhgroundnutoil.com
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /api/
+
+# Google Search Engine
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+
+# Bing Search Engine
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo Search Engine
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Yandex Search Engine
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Baidu Search Engine
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Facebook Crawler
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter Crawler
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Crawler
+User-agent: LinkedInBot
+Allow: /
+
+# Instagram Crawler
+User-agent: Instagram
+Allow: /
+
+# WhatsApp Crawler
+User-agent: WhatsApp
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://pramukhgroundnutoil.com/sitemap.xml
+
